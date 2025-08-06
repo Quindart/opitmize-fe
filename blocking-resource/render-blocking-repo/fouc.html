@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Express App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to My Express Server!</h1>
+      <p>
+        This HTML file is being served by Express.js using
+        <code>res.sendFile()</code>.
+      </p>
+      <p>
+        The server reads this HTML file from the file system and sends it to
+        your browser.
+      </p>
+
+      <button class="button" onclick="showMessage()">Click Me!</button>
+
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </body>
+  <script>
+    setTimeout(() => {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "http://localhost:5000/style.css";
+      document.head.appendChild(link);
+    }, 5000);
+  </script>
+</html>
