@@ -1,0 +1,14 @@
+h1 {
+  background-color: red;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.25rem;
+}
+p {
+  font-size: 1rem;
+}
+
+div {
+  border: 1px solid #333;
+}
